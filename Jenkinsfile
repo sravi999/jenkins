@@ -5,7 +5,6 @@ pipeline {
             steps {
                 sh 'python --version'
             }
-            stage('Build1') {
             steps {
                 sh 'echo "Hello World"'
                 sh '''
@@ -13,7 +12,6 @@ pipeline {
                     ls -lah
                 '''
             }
-        }
         }
     }
 }

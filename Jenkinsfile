@@ -5,15 +5,12 @@ pipeline {
             steps {
                 sh 'python --version'
             }
-        stage("list") {
-            steps {
-                sh 'echo "Hello World"'
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
-            }
         }
-        }
+        stage("List") {
+            steps{
+               sh 'ls -ltr'
+           }
+      }
+
     }
 }

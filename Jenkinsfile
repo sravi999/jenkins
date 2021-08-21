@@ -1,3 +1,4 @@
+#!/usr/bin/env groovy
 pipeline {
     agent { docker { image 'python:3.6.9' } }
     stages {

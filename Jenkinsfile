@@ -4,7 +4,7 @@ pipeline {
         docker { 
             image 'python:3.6.9'
             label 'jen-controller'
-            registryUrl '${dockerHubRegistry}'
+            registryUrl '${DOCKER_HUB_REGISTRY}'
             registryCredentialsId 'DockerHubCrds'
         } }
     stages {

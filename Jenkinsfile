@@ -11,6 +11,7 @@ pipeline {
         stage("List") {
             steps{
                sh 'ls -ltr'
+               echo 'ravi'
            }
       }
 

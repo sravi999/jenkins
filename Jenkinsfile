@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 pipeline {
     agent { docker { image 'python:3.6.9' } }
-    triggers{ pollSCM('* * * * *') }
+    triggers{ pollSCM('H/15 * * * *') }
     stages {
         stage('Build') {
             steps {
